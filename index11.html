@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .row {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+        .row > * {
+            display: table-cell;
+            border-spacing: 0;
+            vertical-align: middle;
+        }
+        .col {
+            font-size: 30px;
+        }
+        .col:nth-child(1) {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // var str1 = "22515188??http://cdn.cnetcontent.com/dd/fa/ddfac63d-075f-4b83-bb8c-984dd2913462.jpg<<22515186??http://cdn.cnetcontent.com/14/a5/14a54837-27fa-4795-809d-b25d9266693c.jpg<<22515187??http://cdn.cnetcontent.com/42/35/42358230-832a-4a25-92f7-9a5490b4203c.jpg<<22515189??http://cdn.cnetcontent.com/ac/9e/ac9e1585-6e11-45fd-b83b-f83edb41f09a.jpg<<22425690??http://cdn.cnetcontent.com/6c/5a/6c5a0662-a92b-49d1-9a10-9ae7125fd7c6.jpg<<22425689??http://cdn.cnetcontent.com/c4/20/c420d958-0ef4-4167-9531-8d8d23204f59.jpg<<21615722??http://cdn.cnetcontent.com/4a/6c/4a6cb0ed-83eb-4b9d-a9f8-a93041b81205.jpg<<21615723??http://cdn.cnetcontent.com/5b/11/5b11c312-db01-4675-a3c9-48f117bd25f6.jpg<<21615713??http://cdn.cnetcontent.com/54/0d/540d6cb5-68cd-4e74-a1a8-50235f4b3854.jpg<<21615719??http://cdn.cnetcontent.com/d5/e2/d5e2a29f-54e5-402a-be84-a69a0edcb472.jpg<<21615721??http://cdn.cnetcontent.com/79/29/79299c7e-5417-4641-8e27-605eb24bdcfa.jpg<<21615720??http://cdn.cnetcontent.com/fc/dd/fcdd10fa-4b90-4ecb-8a3e-06f08d380381.jpg<<21615718??http://cdn.cnetcontent.com/67/fe/67fea8cd-b463-4b20-808c-473c2fdef33a.jpg<<21615712??http://cdn.cnetcontent.com/72/05/72058651-9b2a-4a9f-bd11-6f027a23cb79.jpg<<21615715??http://cdn.cnetcontent.com/6b/4a/6b4a74fe-116a-4dbd-8830-d600607b12bb.jpg<<21615717??http://cdn.cnetcontent.com/09/4b/094b06c6-c145-43d0-92fa-d35248dd9f17.jpg<<21615716??http://cdn.cnetcontent.com/2a/23/2a23b1a0-6305-4d6f-9cd1-be28e2b508ac.jpg<<21615714??http://cdn.cnetcontent.com/60/bb/60bbd27b-8ba0-4218-994d-c25a7702dd9e.jpg<<21615711??http://cdn.cnetcontent.com/fc/a6/fca6a04a-5419-4ee6-b053-651c8d179cfa.jpg<<22549353??http://cdn.cnetcontent.com/a3/3f/a33f344e-524a-41db-90bf-8418553fd58a.jpg<<22549352??http://cdn.cnetcontent.com/82/66/8266eb5e-b3b9-4534-860c-262dde2c86fa.jpg<<22025543??http://cdn.cnetcontent.com/36/b3/36b3f324-2a89-4eaf-a125-eef03c21641c.jpg<<21512368??http://cdn.cnetcontent.com/e4/23/e42305ca-7bd5-41cf-88e0-7b6be8643d66.jpg<<21512366??http://cdn.cnetcontent.com/54/5f/545f40cc-4e36-4c3c-b4a0-349074fd3e34.jpg<<21512369??http://cdn.cnetcontent.com/63/95/6395138a-9e41-40fe-92e6-cd3ab55d8699.jpg<<21512370??http://cdn.cnetcontent.com/e9/9d/e99ddc5f-bd05-4506-958b-11b2d8b26c12.jpg<<21512367??http://cdn.cnetcontent.com/57/6b/576bacf8-967a-4a0d-b3a8-76bc40082067.jpg<<21512363??http://cdn.cnetcontent.com/c3/69/c3690b93-8460-4e1e-b2b2-963ad0ce2688.jpg<<22150257??http://cdn.cnetcontent.com/ad/f6/adf65508-ae1c-4d05-87b6-500d0205b050.jpg<<22150256??http://cdn.cnetcontent.com/ff/57/ff573b35-fed3-4030-975e-2d06892e5930.jpg<<22150255??http://cdn.cnetcontent.com/69/50/6950043e-d7ca-4ade-91ed-8aa5e75b2be0.jpg<<22150259??http://cdn.cnetcontent.com/e5/23/e523e089-b272-4e84-9f6e-32d4de66f7b2.jpg<<22150258??http://cdn.cnetcontent.com/ac/fc/acfcae75-10ca-489e-ba69-7c953a9d0a32.jpg<<22255810??http://cdn.cnetcontent.com/f3/00/f3008286-103a-4be7-b902-60f70937f313.jpg<<22150254??http://cdn.cnetcontent.com/b2/6d/b26d9d5e-4168-4120-a1d1-370c4dcbf7cc.jpg<<22150261??http://cdn.cnetcontent.com/ef/0e/ef0e62cb-ee1a-4a09-b782-036dbe6809d2.jpg<<22150260??http://cdn.cnetcontent.com/d2/15/d215db80-29d5-4f82-9274-6501b0405510.jpg<<22150262??http://cdn.cnetcontent.com/d7/7f/d77fb9ac-3679-4971-a2d3-4a6607c35882.jpg<<22150263??http://cdn.cnetcontent.com/f3/b1/f3b1b5c6-8ae1-415f-aa14-181ea4cd8b79.jpg<<20985576??http://cdn.cnetcontent.com/be/92/be9266d9-ba14-42ac-b71c-10870146953a.jpg<<21150377??http://cdn.cnetcontent.com/f6/b4/f6b4f087-a5f6-42f9-889e-e0858ea81f64.jpg<<21477686??http://cdn.cnetcontent.com/1c/37/1c37b0f9-02c3-42e9-8784-60c49c20fb8d.jpg<<20985578??http://cdn.cnetcontent.com/79/f4/79f4ee6c-e650-497c-a7d0-b2d264a0766c.jpg<<20985573??http://cdn.cnetcontent.com/e0/19/e019e6b0-6e07-4d3c-b6d1-f72aa8d2bb34.jpg<<21132720??http://cdn.cnetcontent.com/75/bc/75bcd852-41ef-471e-a5a1-ae061dfffff4.jpg<<20985577??http://cdn.cnetcontent.com/dc/4e/dc4e8976-9a11-41ca-a09e-954d0110d8e8.jpg<<20985574??http://cdn.cnetcontent.com/9a/35/9a35f55f-21be-4d80-b28d-df40eb3be0e5.jpg<<20985579??http://cdn.cnetcontent.com/4a/c9/4ac94868-fd96-4003-b9d9-fdccbe9cb2cb.jpg"
+
+        var str = "23052064??http://cdn.cnetcontent.com/06/e8/06e86ca2-a035-45e0-9e2f-87297da5ba41.jpg<<23029504??http://cdn.cnetcontent.com/cf/1f/cf1f39cf-0111-4a7f-a098-c4223012e713.jpg<<23068538??http://cdn.cnetcontent.com/0b/99/0b997bdf-941c-4853-a010-fad62b4b5111.jpg<<23068598??http://cdn.cnetcontent.com/1b/77/1b77627a-a3e9-46cf-a131-5e06ef60bded.jpg<<23068599??http://cdn.cnetcontent.com/e0/99/e0998d7c-e220-4807-b609-fd6a359cf8af.jpg<<23052048??http://cdn.cnetcontent.com/d5/c7/d5c7a099-6dd1-4938-8903-47c9804928c0.jpg<<23052063??http://cdn.cnetcontent.com/cd/0d/cd0d4268-2d88-4eba-afe0-17b59f2c5490.jpg<<23052074??http://cdn.cnetcontent.com/92/a9/92a9f390-1472-4958-889d-69a57cfa24c0.jpg<<23052111??http://cdn.cnetcontent.com/b9/7e/b97e5a97-ba54-4251-953f-3bf9745d137b.jpg<<23052119??http://cdn.cnetcontent.com/9b/c6/9bc6f7ae-6e2e-4879-a7c4-9965a55b1452.jpg<<22917637??http://cdn.cnetcontent.com/3b/78/3b781061-9f6d-4d0d-87ad-4e82c32a7b36.jpg<<23058496??http://cdn.cnetcontent.com/db/00/db002bf4-5188-4da4-97e6-0be2a8b0a939.jpg<<23058500??http://cdn.cnetcontent.com/50/f8/50f8c490-4bcd-4676-b4ff-994ca13627d4.jpg<<23058495??http://cdn.cnetcontent.com/a0/61/a0619642-fea0-404e-b123-da4938c693a3.jpg<<21484553??http://cdn.cnetcontent.com/d5/ec/d5ecf2a7-f1cc-41f4-8ba2-a6f69f15d442.jpg<<22633077??http://cdn.cnetcontent.com/b1/a1/b1a19564-6895-4e1a-8e74-e908f337ea40.jpg<<22633079??http://cdn.cnetcontent.com/ac/af/acaf1639-530f-46dc-9734-47a61e687af6.jpg<<22633080??http://cdn.cnetcontent.com/47/b2/47b28d83-52c9-4ab7-b4ad-b0c50be3ddca.jpg<<22917646??http://cdn.cnetcontent.com/2a/29/2a296f4c-dd43-48e2-a5b5-7106532b9bd8.jpg<<22633078??http://cdn.cnetcontent.com/77/ff/77ff5e76-4409-478c-a1d5-26009a47f896.jpg<<22633081??http://cdn.cnetcontent.com/4e/63/4e63295a-16ac-42bc-b7ef-09757b3bb46b.jpg<<22759061??http://cdn.cnetcontent.com/3a/f5/3af5910f-02ec-4f19-a5b3-cf72d7e78857.jpg<<23080397??http://cdn.cnetcontent.com/09/b2/09b290ff-881e-4cfa-8360-8e9afda6aa39.jpg<<23080398??http://cdn.cnetcontent.com/9a/37/9a3753d7-ce7b-44b3-a55f-bca390d180cd.jpg<<23080399??http://cdn.cnetcontent.com/41/3e/413efc6c-2848-4f78-9d4e-b41e1e51b747.jpg<<20919132??http://cdn.cnetcontent.com/37/d5/37d5a69a-6a30-4a5d-8780-ead93af76f95.jpg<<22633082??http://cdn.cnetcontent.com/d8/2e/d82e3b9d-496b-4eac-b6c9-566d6038e0e3.jpg<<22633084??http://cdn.cnetcontent.com/94/1b/941b2b48-41e2-4a8f-8f67-c0ddaec16595.jpg<<22759077??http://cdn.cnetcontent.com/2d/ec/2dec762e-30bc-42f6-9c18-ef8e975752f8.jpg<<23080355??http://cdn.cnetcontent.com/b8/d3/b8d3729a-1818-437a-bca0-cda92b327551.jpg<<22633083??http://cdn.cnetcontent.com/d2/56/d2561be1-d8f3-4398-b55a-c181d6869acf.jpg<<19779134??http://cdn.cnetcontent.com/ef/33/ef331fe4-13e6-43fe-9709-a41b119277f1.jpg<<23052050??http://cdn.cnetcontent.com/bc/c3/bcc301ae-9187-4885-8081-97381e6e1e08.jpg";
+        
+
+        var sku = str.split("<<").map(element => {
+            let str = element.match(/^[0-9]+\?\?/)[0];
+            return str.substring(0, str.length - 2);
+        })
+        console.log(str);
+        var s = str.split("<<").map(element => {
+            element = element.replace("<<", "")
+            element = element.replace(/[0-9]+\?\?/, "<img src='").replace(".jpg", ".jpg'></img>");
+            return element;
+        });
+        console.log(s);
+        let res = [];
+        for (let i = 0; i < s.length; i++) {
+            res[i] = `<div class="row"><div class="col">${sku[i]}</div><div class="col">${s[i]}</div></div>`
+        }
+        document.body.innerHTML = res.join();
+    </script>
+</body>
+</html>
